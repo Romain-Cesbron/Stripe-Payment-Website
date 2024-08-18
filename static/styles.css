@@ -1,0 +1,261 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FFECCC;
+}
+
+.header_container {
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  background-image: url('image_fruit/fruit_header.jpg');
+  background-size: cover;
+  height:150px;
+  color: white;
+  background-position: center center;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 90px; /* Adjust as needed */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow for better readability */
+  margin: 0;
+  
+}
+
+.header_container h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.red_box {
+  /*border: 1px solid red;*/
+}
+
+.article_container {
+  margin-bottom:10px;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article_container img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 10px;
+}
+
+.article_description {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.article_price {
+  font-size: 18px;
+  color: #333;
+}
+
+.bt_add_cart {
+  background-color: #b98746;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bt_add_cart:hover {
+  background-color:#956628;
+}
+
+.panier {
+  overflow: visible; /* Hides any overflow content */
+  width:100px;
+  height:100px;
+}
+
+.panier_img {
+  max-width:150px;
+  max-height:150px;
+}
+
+.image_article {
+  width: 80px;
+  min-height: 200px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.blue_box {
+  border: 1px solid blue;
+  margin: 5px;
+}
+
+.brown_box {
+  border: 3px solid #60013f;
+  margin: 5px;
+}
+
+.name_article,
+.article_price {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+
+.flex_column {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.panier_bt {
+  width: 80px;
+  height: 50px;
+  border-radius: 10%;
+  border: 2px solid;
+  background-color: #e6c1e3;
+  padding: 2px;
+  border-color: transparent;
+  font-size: 20px;
+}
+
+.panier_bt:hover {
+  border: 2px solid #620075;
+  cursor: pointer;
+}
+
+
+.list_article_panier_HTML {
+  display: block;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.bt_cancel_cart {
+  width: 30px;
+  height: 30px;
+  border-radius: 15%;
+  border: 1px solid;
+  background-color: #f43e6c;
+  border-color: black;
+  font-size: 20px;
+}
+
+.bt_validate_cart {
+  border-radius: 15%;
+  border: 1px solid;
+  background-color: #C8D6AF;
+  border-color: black;
+  font-size: 20px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Style for articles in the basket */
+.article_description_panier {
+  min-width:170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.name_article h5 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.article_price {
+  font-size: 18px;
+  color: #777;
+}
+
+.bt_remove_cart, .bt_cancel_cart {
+  background-color: #A4303F;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.bt_remove_cart:hover, .bt_cancel_cart:hover {
+  background-color: #c82333;
+}
+
+.bt_validate_cart {
+  background-color: #94a970;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.bt_validate_cart:hover {
+  background-color: #58722c;
+}
+
+.container_quantity {
+  display: none;
+}
+
+.container_quantity_ON {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it appears above other elements */
+  background-color: #fff; /* Background color for the container */
+  padding: 20px; /* Padding inside the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for better visibility */
+  border-radius: 8px; /* Optional: rounded corners */
+  width: 300px; /* Optional: set a fixed width for the container */
+}
+
+.article_display_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.basket_container {
+  justify-content: left;
+
+}
