@@ -259,3 +259,95 @@ body {
   justify-content: left;
 
 }
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .header_container {
+    height: 100px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .main_container {
+    flex-direction: column;
+  }
+
+  .article_display_container {
+    width: 100%;
+    order: 1;
+  }
+
+  .basket_container {
+    width: 100%;
+    order: 2;
+    align-items: flex-end;
+  }
+
+  .article_container {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .panier_bt {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .bt_add_cart, .bt_cancel_cart, .bt_validate_cart, .bt_remove_cart {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .container_quantity_ON {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_container {
+    height: 80px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .main_container {
+    flex-direction: column;
+  }
+
+  .article_display_container {
+    width: 100%;
+    order: 1;
+  }
+
+  .basket_container {
+    width: 100%;
+    order: 2;
+    align-items: flex-end;
+  }
+
+  .article_container {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .panier_bt {
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .bt_add_cart, .bt_cancel_cart, .bt_validate_cart, .bt_remove_cart {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .container_quantity_ON {
+    width: 90%;
+  }
+}

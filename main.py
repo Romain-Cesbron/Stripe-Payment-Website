@@ -14,7 +14,7 @@ def serve_static(path):
     else:
         return send_from_directory(app.static_folder, 'index.html')
 
-YOUR_DOMAIN = 'https://4ac28827-51c8-4fcc-9a7c-4a05d47adcc8-00-ezjvdjxy5hc.spock.replit.dev/'
+YOUR_DOMAIN = 'https://stripe-payment-website.onrender.com'
 
 @app.route('/create-checkout-session', methods=['POST'])
 def create_checkout_session():
